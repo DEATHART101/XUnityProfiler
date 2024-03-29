@@ -1,5 +1,5 @@
 # XUnityProfiler
-A dotnet program to automatically generate BeginSample/EndSample at the Start/End of every function  
+A dotnet program to automatically generate BeginSample/EndSample at the Start/End of every function (When deep profiling is just too slow for you!)  
 
 Use --help or -h to see help messages  
 Lastest help message ↓↓↓  
