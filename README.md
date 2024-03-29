@@ -1,14 +1,14 @@
 # XUnityProfiler
-A dotnet program to automatically generate BeginSample/EndSample at the Start/End of every function
+A dotnet program to automatically generate BeginSample/EndSample at the Start/End of every function  
 
-Use --help or -h to see help messages
-Lastest help message ↓↓↓
-Arguments:
-        -p, --Path The path to the file(.cs) or a folder (default: "")
-        -?, -h, --help  ShowHelp
+Use --help or -h to see help messages  
+Lastest help message ↓↓↓  
+Arguments:  
+        -p, --Path The path to the file(.cs) or a folder (default: "")  
+        -?, -h, --help  ShowHelp  
 
-Example:
-File(Path: D:/temp.cs):
+Example:  
+File(Path: D:/temp.cs):  
 ```
 public class CancelKeyHolding : KeyHolding {
     private void OnEnable() {
@@ -36,13 +36,13 @@ public class CancelKeyHolding : KeyHolding {
 }
 ```
 
-Run:
-.\XUnityProfiler.exe -p D:/temp.cs
-or
-.\XUnityProfiler.exe --Path D:/temp.cs
+Run:  
+.\XUnityProfiler.exe -p D:/temp.cs  
+or  
+.\XUnityProfiler.exe --Path D:/temp.cs  
 
-converts the file to ↓↓↓
-New File(Path: D:/temp.cs):
+converts the file to ↓↓↓  
+New File(Path: D:/temp.cs):  
 ```
 public class CancelKeyHolding : KeyHolding {
     private void OnEnable() {
@@ -78,11 +78,11 @@ public class CancelKeyHolding : KeyHolding {
 }
 ```
 
-Works on
+Works on  
 - Normal Function (with or without return)
 - Generic Function
 
-Dosen't work on
+Dosen't work on  
 - IEnumerble Functions(Ones have 'yield return')
 - async Functions
 - Getter/Setters (Because I am lazy)
