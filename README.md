@@ -9,7 +9,7 @@ Arguments:
 
 Example:  
 File(Path: D:/temp.cs):  
-```
+```C#
 public class CancelKeyHolding : KeyHolding {
     private void OnEnable() {
         inputActions.OnCancel += StartHold;
@@ -43,7 +43,7 @@ or
 
 converts the file to ↓↓↓  
 New File(Path: D:/temp.cs):  
-```
+```C#
 public class CancelKeyHolding : KeyHolding {
     private void OnEnable() {
         UnityEngine.Profiling.Profiler.BeginSample("CancelKeyHolding.cs OnEnable");
